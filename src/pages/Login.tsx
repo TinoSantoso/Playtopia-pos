@@ -125,7 +125,10 @@ const Login: React.FC = () => {
                         variant="outline-primary"
                         size="sm"
                         className="w-100"
-                        onClick={() => quickLogin('owner@playground.com', 'owner123')}
+                        onClick={() => quickLogin(
+                          process.env.REACT_APP_OWNER_EMAIL!,
+                          process.env.REACT_APP_OWNER_PASSWORD!
+                        )}
                       >
                         Owner
                       </Button>
@@ -135,7 +138,10 @@ const Login: React.FC = () => {
                         variant="outline-info"
                         size="sm"
                         className="w-100"
-                        onClick={() => quickLogin('manager@playground.com', 'manager123')}
+                        onClick={() => quickLogin(
+                          process.env.REACT_APP_MANAGER_EMAIL!,
+                          process.env.REACT_APP_MANAGER_PASSWORD!
+                        )}
                       >
                         Manager
                       </Button>
@@ -145,7 +151,10 @@ const Login: React.FC = () => {
                         variant="outline-success"
                         size="sm"
                         className="w-100"
-                        onClick={() => quickLogin('cashier@playground.com', 'cashier123')}
+                        onClick={() => quickLogin(
+                          process.env.REACT_APP_CASHIER_EMAIL!,
+                          process.env.REACT_APP_CASHIER_PASSWORD!
+                        )}
                       >
                         Cashier
                       </Button>
@@ -155,7 +164,10 @@ const Login: React.FC = () => {
                         variant="outline-warning"
                         size="sm"
                         className="w-100"
-                        onClick={() => quickLogin('supervisor@playground.com', 'super123')}
+                        onClick={() => quickLogin(
+                          process.env.REACT_APP_SUPERVISOR_EMAIL!,
+                          process.env.REACT_APP_SUPERVISOR_PASSWORD!
+                        )}
                       >
                         Supervisor
                       </Button>

@@ -3,35 +3,35 @@ import { User, AuthContextType, UserRole } from '../types';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// Mock users for demonstration
+// Mock users for demonstration - using environment variables
 const mockUsers: (User & { password: string })[] = [
   {
     id: '1',
-    email: 'owner@playground.com',
-    password: 'owner123',
-    name: 'Owner Admin',
-    role: 'owner'
+    email: process.env.REACT_APP_OWNER_EMAIL!,
+    password: process.env.REACT_APP_OWNER_PASSWORD!,
+    name: process.env.REACT_APP_OWNER_NAME!,
+    role: 'owner' as UserRole
   },
   {
     id: '2',
-    email: 'manager@playground.com',
-    password: 'manager123',
-    name: 'Manager Smith',
-    role: 'manager'
+    email: process.env.REACT_APP_MANAGER_EMAIL!,
+    password: process.env.REACT_APP_MANAGER_PASSWORD!,
+    name: process.env.REACT_APP_MANAGER_NAME!,
+    role: 'manager' as UserRole
   },
   {
     id: '3',
-    email: 'cashier@playground.com',
-    password: 'cashier123',
-    name: 'Cashier Jones',
-    role: 'cashier'
+    email: process.env.REACT_APP_CASHIER_EMAIL!,
+    password: process.env.REACT_APP_CASHIER_PASSWORD!,
+    name: process.env.REACT_APP_CASHIER_NAME!,
+    role: 'cashier' as UserRole
   },
   {
     id: '4',
-    email: 'supervisor@playground.com',
-    password: 'super123',
-    name: 'Supervisor Brown',
-    role: 'supervisor'
+    email: process.env.REACT_APP_SUPERVISOR_EMAIL!,
+    password: process.env.REACT_APP_SUPERVISOR_PASSWORD!,
+    name: process.env.REACT_APP_SUPERVISOR_NAME!,
+    role: 'supervisor' as UserRole
   }
 ];
 
