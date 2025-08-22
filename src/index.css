@@ -1,0 +1,245 @@
+/* Import Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Basic CSS Reset and Custom Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom Kid-Friendly Styles */
+.kid-friendly-bg {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+}
+
+.font-kid-friendly {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Custom Button Variants */
+.btn-primary {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.btn-primary:hover {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.btn-secondary {
+  background-color: #f97316;
+  border-color: #f97316;
+}
+
+.btn-secondary:hover {
+  background-color: #ea580c;
+  border-color: #ea580c;
+}
+
+.btn-success {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+  border-color: #059669;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  border-color: #ef4444;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Custom Card Styles */
+.custom-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+}
+
+/* Status Indicators */
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-inactive {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+/* Navigation Styles */
+.nav-sidebar {
+  background-color: white;
+  border-right: 1px solid #e5e7eb;
+  min-height: 100vh;
+}
+
+.nav-link-custom {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.nav-link-custom:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+  text-decoration: none;
+}
+
+.nav-link-custom.active {
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+/* Custom Color Classes */
+.text-primary-600 {
+  color: #7c3aed;
+}
+
+.text-success-600 {
+  color: #059669;
+}
+
+.text-danger-600 {
+  color: #dc2626;
+}
+
+.text-warning-600 {
+  color: #d97706;
+}
+
+.text-secondary-600 {
+  color: #ea580c;
+}
+
+.bg-primary-500 {
+  background-color: #8b5cf6;
+}
+
+.bg-success-500 {
+  background-color: #10b981;
+}
+
+.bg-danger-500 {
+  background-color: #ef4444;
+}
+
+.bg-warning-500 {
+  background-color: #f59e0b;
+}
+
+.bg-secondary-500 {
+  background-color: #f97316;
+}
+
+/* Utility Classes */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 16rem;
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  z-index: 1051;
+}
+
+/* Progress Bar Styles */
+.progress-bar-success {
+  background-color: #10b981;
+}
+
+.progress-bar-warning {
+  background-color: #f59e0b;
+}
+
+.progress-bar-danger {
+  background-color: #ef4444;
+}
+
+/* Form Styles */
+.form-control:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+}
+
+/* Alert Styles */
+.alert-custom {
+  border-left: 4px solid;
+}
+
+.alert-danger-custom {
+  border-left-color: #ef4444;
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.alert-success-custom {
+  border-left-color: #10b981;
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.alert-warning-custom {
+  border-left-color: #f59e0b;
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+.alert-info-custom {
+  border-left-color: #3b82f6;
+  background-color: #eff6ff;
+  color: #1e40af;
+}
